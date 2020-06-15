@@ -1,0 +1,1 @@
+wordcount.py implements a hashmap with singly linked lists in hashmap.py to return the x most frequently used words in any text file.  Data Structures final project.
