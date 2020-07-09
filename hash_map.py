@@ -263,8 +263,4 @@ class HashMap:
         for bucket in self._buckets:
             out = out + str(index) + ': ' + str(bucket) + '\n'
             index = index + 1
-<<<<<<< HEAD
         return out
-=======
-        return out
->>>>>>> b038b88cc488cede01353a45d71d42f73967f025
