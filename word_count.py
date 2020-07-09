@@ -14,8 +14,7 @@ from hash_map import HashMap
 
 """
 This is the regular expression used to capture words. It could probably be endlessly
-tweaked to catch more words, but this provides a standard we can test against, so don't
-modify it for your assignment submission.
+tweaked to catch more words, but this provides a standard we can test against.
 """
 rgx = re.compile("(\w[\w']*\w|\w)")
 
@@ -80,3 +79,9 @@ def top_words(source, number):
         count_array[i] = (count_array[i][1], count_array[i][0])
 
     return count_array[:number]  # return only the requested number of top words
+
+
+"""Change source to abs location of your text file and number to an integer (number of words you wish to return)"""
+
+if __name__ == "__main__":
+    print(top_words(source, number))

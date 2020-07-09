@@ -264,22 +264,3 @@ class HashMap:
             out = out + str(index) + ': ' + str(bucket) + '\n'
             index = index + 1
         return out
-
-
-x1 = 'pool'
-x2 = 'loop'
-y1 = hash_function_1(x1)
-y2 = hash_function_1(x2)
-z1 = hash_function_2(x1)
-z2 = hash_function_2(x2)
-
-hash_key_test = z1 % 5
-hash_key_test2 = z2 % 5
-
-print("{} hashes to {} with hash_function_1".format(x1, y1))
-print("{} hashes to {} with hash_function_1 \n".format(x2, y2))
-print("{} hashes to {} with hash_function_2".format(x1, z1))
-print("{} hashes to {} with hash_function_2".format(x2, z2))
-
-print(hash_key_test)
-print(hash_key_test2)
